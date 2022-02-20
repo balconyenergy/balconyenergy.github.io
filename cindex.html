@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookies Notification Popup In Bootstrap 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="w3hubs.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <style type="text/css">
+      body {
+      font-family: "Nunito Sans";
+      }
+      h1{
+      font-weight: bold;
+      }
+      .modal-content{
+      border-radius: 0px;
+      }
+      .modal-footer .btn{
+      border-radius: 0px;
+      padding: 15px;
+      }
+      .btn-secondary:active:focus{
+      box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+    Open Now
+    </button>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12 text-center" id="loginForm">
+                <img src="bg.jpg" class="w-50">
+                <h1 class="pt-3">Cookies!</h1>
+                <h3>we use cookies to improve your experience</h3>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer p-0">
+            <div class="row w-100 m-0">
+              <div class="col-6 p-0">
+                <button type="button" class="btn btn-secondary my-0 w-100" data-bs-dismiss="modal">Privacy Policy</button>
+              </div>
+              <div class="col-6 p-0">
+                <button type="button" class="btn btn-primary my-0 w-100">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+  </body>
+</html>
