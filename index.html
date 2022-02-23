@@ -152,20 +152,24 @@
 
           <a class="btn btn-outline-primary btn-lg" onclick="document.getElementById('modal_SIR').click()" href="#"
             role="button">
-            Presupuesto
+            Estudio Tecnico-economico
           </a>
 
           <p class="my-4">
-            Su presupuesto ahora con solo su localizacion y consumo.
-            Aporveche las ayudas Next Generation de hasta el 40%.
-
+            Estime la dimension, coste y rentabilidad de su instalacion de placas solares fotovoltaicas
+            segun su localizacion y consumo. </p>
+          <br>
+          <p class="my-4">
+            
+            Aprovechese de las ayudas Next Generation de hasta el 40%.
+            contactandonos para un servicio llave en mano.
+          </p>
         </div>
         <div class="col-md-8">
           <img src="img/app-screenshots/presupuesto.gif" alt="" class="img-fluid" />
         </div>
         <br>
         <div>
-
         </div>
       </div>
     </div>
@@ -359,7 +363,7 @@
           <h1>Contactanos:</h1>
 
           <div class="mb-3">
-            <form id="form" action="https://formsubmit.co/admin@asolear.es" method="POST">
+            <form id="form" action="https://formsubmit.co/admin@asolear.es" method="POST" enctype="multipart/form-data">
               <input class="form-control" type="hidden" name="_captcha" value="false">
               <!--  -->
 
@@ -378,6 +382,9 @@
               <!--  -->
               <label for="exampleFormControlInput1" class="form-label">Email</label>
               <input class="form-control" type="email" name="email" placeholder="Tu email" required>
+              <!--  -->
+              <label for="exampleFormControlInput1" class="form-label">Adjuntar documento:</label>
+              <input type="file" id="myfile" name="myfile" multiple><br><br>
               <!--  -->
               <input type="checkbox" required>
               <label for="exampleFormControlInput1"> Acepto la <a
@@ -477,8 +484,8 @@
 
 
   <!-- Button trigger modal -->
-  <button hidden type="button" id='boton_staticBackdrop_politica_privacidad' class="btn btn-primary" data-bs-toggle="modal"
-    data-bs-target="#staticBackdrop_politica_privacidad">
+  <button hidden type="button" id='boton_staticBackdrop_politica_privacidad' class="btn btn-primary"
+    data-bs-toggle="modal" data-bs-target="#staticBackdrop_politica_privacidad">
     Launch static backdrop modal
   </button>
 
