@@ -123,6 +123,11 @@
                   href="#">politica de privacidad
                 </a>
               </li>
+              <li>
+                <a class="dropdown-item" onclick="document.getElementById('modal_autoconsumes').click()"
+                  href="#">autoconsumes
+                </a>
+              </li>
               <li><a class="dropdown-item" href="#">Acerca de Asolear</a></li>
             </ul>
           </li>
@@ -143,6 +148,9 @@
       data-bs-target="#exampleModal" data-bs-whatever="https://asolear.es/politica_de_privacidad/">ja</button>
     <button hidden id='modal_ja' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#exampleModal" data-bs-whatever="https://asolear.es/ja/">ja</button>
+    <button hidden id='modal_autoconsumes' type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#exampleModal" data-bs-whatever="https://autoconsumes.github.io"></button>
+
   </section>
 
 
@@ -152,6 +160,14 @@
       <img src="img/app-screenshots/asolear.svg" alt="" class="img-fluid" />
     </div>
     <div class="container pt-3">
+      <center>
+        <a class="btn btn-outline-warning btn-lg" onclick="document.getElementById('modal_SIR').click()" href="#"
+          role="button">
+          Calcula tu instalacion
+        </a>
+
+      </center>
+
       <div class="row align-items-center justify-content-center">
         <h1>Ingeniería e Instalación de paneles solares.</h1>
         <p class="fw-lighter">Expertos en generación eléctrica desde hace 30 años.</p>
@@ -225,9 +241,6 @@
             <a class="btn btn-outline-warning btn-lg" onclick="document.getElementById('modal_SIR').click()" href="#"
               role="button">
               Estudio Preliminar
-            </a> <a class="btn btn-outline-warning btn"
-              onclick="document.getElementById('modal_presupuesto_button').click()" href="#" role="button">
-              *
             </a>
 
             <li>2.
@@ -445,8 +458,7 @@
               <!--  -->
               <input type="checkbox" required>
               <label for="exampleFormControlInput1"> Acepto la <a
-                  onclick="document.getElementById('boton_staticBackdrop_politica_privacidad').click()"
-                  href="#">Política de
+                  onclick="document.getElementById('modal_politica_de_privacidad').click()" href="#">Política de
                   Privacidad.</a></label>
 
               <input type="submit" class="btn btn-primary" value="Enviar">
@@ -476,9 +488,8 @@
       <div class="modal-content">
         <div class="modal-header">
           <!-- <h5 class="modal-title" id="exampleModalLabel" style="background-color:DodgerBlue;">   Simulador de Inversion en Renovables</h5> -->
-          <div class="p-1 mb-2 bg-primary text-white"> <button type="button" class="btn btn-warning"
-              data-bs-dismiss="modal">Inicio</button>
-          </div>
+          <button type="button" class="btn btn-outline-primary btn-sm"
+          data-bs-dismiss="modal">Inicio</button>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
