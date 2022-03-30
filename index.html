@@ -80,6 +80,11 @@
       padding: 0;
       background: none;
     }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
   </style>
 </head>
 
@@ -186,31 +191,37 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-4">
-          <div class="icon  mb-4">
-            <img src="img/app-screenshots/tejado.svg" alt="" class="img-fluid" />
-          </div>
-          <h3>Utoconsumo Individual</h3>
-          <p class="mb-0">
-            Residencial en el tejado.
-          </p>
+          <a onclick="document.getElementById('modal_SIR').click()" href="#">
+            <div class="icon  mb-4">
+              <img src="img/app-screenshots/tejado.svg" alt="" class="img-fluid" />
+            </div>
+            <h3>Utoconsumo Individual</h3>
+            <p class="mb-0">
+              Residencial en el tejado.
+            </p>
+          </a>
         </div>
         <div class="col-md-4">
-          <div class="icon  mb-4">
-            <img src="img/app-screenshots/comunitario.svg" alt="" class="img-fluid" />
-          </div>
-          <h3>Autoconsumo Compartido</h3>
-          <p class="mb-0">
-            Entre comunidades de propietarios y poligonos industriales.
-          </p>
+          <a onclick="document.getElementById('modal_SIR').click()" href="#">
+            <div class="icon  mb-4">
+              <img src="img/app-screenshots/comunitario.svg" alt="" class="img-fluid" />
+            </div>
+            <h3>Autoconsumo Compartido</h3>
+            <p class="mb-0">
+              Entre comunidades de propietarios y poligonos industriales.
+            </p>
+          </a>
         </div>
         <div class="col-md-4">
-          <div class="icon  mb-4">
-            <img src="img/app-screenshots/panel-4023137.png" alt="" class="img-fluid" />
-          </div>
-          <h3>Huertos solares</h3>
-          <p>
-            PPA y pool.
-          </p>
+          <a onclick="document.getElementById('modal_SIR').click()" href="#">
+            <div class="icon  mb-4">
+              <img src="img/app-screenshots/panel-4023137.png" alt="" class="img-fluid" />
+            </div>
+            <h3>Huertos solares</h3>
+            <p>
+              PPA y pool.
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -230,35 +241,42 @@
 
         <div class="col-md-5"><br><br>
           <p class="my-4">
-            Dimensionada adecuadamente por buenos profesionales, ademas de rentable, nunca había sido tan fácil generar
+            Dimensionada adecuadamente, nunca había sido tan fácil y rentable generar
             tu propia energía solar en el hogar. Desde la consulta inicial hasta la
             instalación, te iremos guiando paso a paso.
           </p>
           <ul>
             <li>1.
-              Accede a nuestro simulador y haz un estudio preliminar. Después, nuestros expertos te ayudarán a adaptar
-              la instalación solar que mejor se adapte a tus necesidades.</li>
-            <a class="btn btn-outline-warning btn-lg" onclick="document.getElementById('modal_SIR').click()" href="#"
-              role="button">
-              Estudio Preliminar
-            </a>
-
+              Solicitanos presupuesto sin compromiso.</li>
             <li>2.
               Asolear te enviará un presupuesto incluyendo todos los componentes del sistema así como de la instalación.
             </li>
-            <a class="btn btn-outline-warning btn-lg" href="#Contacto" role="button">Presupuesto</a>
 
-            <li>3. Instalación
+
+          </ul>
+        </div>
+
+        <div class="col-md-7">
+
+          <a class="btn btn-outline-primary btn-lg" onclick="document.getElementById('modal_SIR').click()" href="#"
+            role="button">
+            Presupuesto
+          </a>
+          <hr>
+          <img src="img/app-screenshots/01.svg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-5"><br><br>
+          <ul>
+            <li>3.
+              Nuestros expertos aclararan cualquier duda y te ayudarán a adaptar
+              la instalación solar que mejor se adapte a tus necesidades.</li>
+            <li>4.
+              Firmamos un contrato 'llave en mano'.</li>
+            <li>5. Instalación
               Después de aceptar el presupuesto, Asolear te instalará tu sistema de autoconsumo solar y se asegurará de
               que todo funcione como es debido.</li>
 
           </ul>
-        </div>
-        <div class="col-md-7">
-          <img src="img/app-screenshots/01.svg" alt="" class="img-fluid" />
-        </div>
-        <br>
-        <div>
         </div>
       </div>
     </div>
@@ -323,8 +341,8 @@
             SIR es la mejor aplicacion web para analizar la rentabilidad de instalaciones de energia renovable.
           </p>
 
-          <a class="btn btn-outline-danger btn-lg" onclick="document.getElementById('modal_SIR').click()"
-            role="button">Ir a SIR</a>
+          <!-- <a class="btn btn-outline-danger btn-lg" onclick="document.getElementById('modal_SIR').click()"
+            role="button">Ir a SIR</a> -->
           <!-- <a class="btn btn-outline-warning btn-lg" href="#" role="button">Ver video</a> -->
           <p class="my-4">
             SIR<sup>+</sup> para grandes consumidores, le permite usar el perfil de carga a medida y ajustar multitud de
@@ -488,8 +506,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <!-- <h5 class="modal-title" id="exampleModalLabel" style="background-color:DodgerBlue;">   Simulador de Inversion en Renovables</h5> -->
-          <button type="button" class="btn btn-outline-primary btn-sm"
-          data-bs-dismiss="modal">Inicio</button>
+          <button type="button" class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Inicio</button>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
