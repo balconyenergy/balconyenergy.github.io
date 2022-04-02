@@ -29,8 +29,8 @@
      id="namedview25"
      showgrid="false"
      inkscape:zoom="0.44346944"
-     inkscape:cx="904.00669"
-     inkscape:cy="58.913948"
+     inkscape:cx="508.26352"
+     inkscape:cy="54.404054"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -139,7 +139,7 @@
        fx="308.25079"
        cy="344.45706"
        cx="308.25079"
-       gradientTransform="matrix(-4.9072829,-3.1878666e-8,5.100796e-4,-6.6230892,108.93176,2484.0486)"
+       gradientTransform="matrix(-4.5049086,-2.9264766e-8,4.6825543e-4,-6.0800269,458.12065,2332.0396)"
        gradientUnits="userSpaceOnUse"
        id="radialGradient4188-5-3"
        xlink:href="#linearGradient4964" />
@@ -202,14 +202,14 @@
        style="opacity:0.97000002;fill:url(#radialGradient4950-3-5);fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1" />
     <text
        id="text4960-9-2"
-       y="202.67911"
-       x="-1732.1823"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:198.83906555px;line-height:0%;font-family:Purisa;-inkscape-font-specification:'Purisa, Bold';text-align:start;letter-spacing:7.03391886px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#radialGradient4188-5-3);fill-opacity:1;stroke:none;stroke-width:0.69801641px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       y="237.73166"
+       x="-1232.0306"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:182.53520203px;line-height:0%;font-family:Purisa;-inkscape-font-specification:'Purisa, Bold';text-align:start;letter-spacing:6.45717049px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#radialGradient4188-5-3);fill-opacity:1;stroke:none;stroke-width:0.6407823px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
-       transform="scale(0.52192437,1.9159864)"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:198.83906555px;line-height:694.00000572%;font-family:Purisa;-inkscape-font-specification:'Purisa, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#radialGradient4188-5-3);fill-opacity:1;stroke-width:0.69801641px"
-         y="202.67911"
-         x="-1732.1823"
-         id="tspan4962-1-9">asolear</tspan></text>
+       transform="scale(0.75166406,1.3303815)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:182.53520203px;line-height:694.00000572%;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#radialGradient4188-5-3);fill-opacity:1;stroke-width:0.6407823px"
+         y="237.73166"
+         x="-1232.0306"
+         id="tspan4962-1-9">Asolear</tspan></text>
   </g>
 </svg>
