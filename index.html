@@ -116,7 +116,11 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item"
-                  onclick="document.getElementById('modal_guia_autoconsumidor_5_pasos').click()" href="#">Guía práctica para convertirse en autoconsumidor en 5 pasos (IDAE)</a>
+                  onclick="document.getElementById('modal_guia_autoconsumidor_5_pasos').click()" href="#">Guía práctica
+                  para convertirse en autoconsumidor en 5 pasos (IDAE)</a>
+              </li>
+              <li><a class="dropdown-item"
+                  onclick="document.getElementById('modal_guia_profesional').click()" href="#">Guía profesional de tramitación del autoconsumo  (IDAE)</a>
               </li>
               <!-- <li><a class="dropdown-item" onclick="document.getElementById('modal_ja').click()" href="#">Organismos</a>
               </li>
@@ -145,7 +149,11 @@
 
   <section>
     <button hidden id='modal_guia_autoconsumidor_5_pasos' type="button" class="btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#exampleModal" data-bs-whatever="https://www.idae.es/sites/default/files/documentos/publicaciones_idae/guia_autoconsumo_5_pasos_ok.pdf">SIR</button>
+      data-bs-target="#exampleModal"
+      data-bs-whatever="https://www.idae.es/sites/default/files/documentos/publicaciones_idae/guia_autoconsumo_5_pasos_ok.pdf">SIR</button>
+      <button hidden id='modal_guia_profesional' type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      data-bs-whatever="https://www.idae.es/sites/default/files/documentos/publicaciones_idae/2022_04_Guia_Profesional_Tramitacion_autoconsumo_v.4.0.pdf">SIR</button>
     <button hidden id='modal_autoconsumes' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#exampleModal" data-bs-whatever="https://autoconsumes.github.io/">SIR</button>
     <button hidden id='modal_SIR' type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -169,8 +177,13 @@
     </div>
     <div class="container pt-3">
       <center>
+        <a class="btn btn-info btn-lg"
+          href="https://www.idae.es/sites/default/files/documentos/publicaciones_idae/guia_autoconsumo_5_pasos_ok.pdf"
+          role="button">
+          Guía del autoconsumidor en 5 pasos
+        </a>
         <a class="btn btn-warning btn-lg" onclick="document.getElementById('modal_SIR').click()" href="#" role="button">
-          Calcula tu ahorro autoconsumiendo energía solar
+          Presupuesto y tramitacion de incentivos gratuita.
         </a>
         <!-- <div class="row align-items-center justify-content-center">
           <h1>Ingeniería e Instalación de paneles solares.</h1>
