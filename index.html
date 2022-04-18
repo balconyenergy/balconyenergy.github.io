@@ -115,8 +115,10 @@
               Ayuda
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" onclick="document.getElementById('modal_ja').click()" href="#">Organismos</a>
+              <li><a class="dropdown-item"
+                  onclick="document.getElementById('modal_guia_autoconsumidor_5_pasos').click()" href="#">Organismos</a>
+              </li>
+              <!-- <li><a class="dropdown-item" onclick="document.getElementById('modal_ja').click()" href="#">Organismos</a>
               </li>
               <li>
                 <a class="dropdown-item" onclick="document.getElementById('modal_ayuda').click()" href="#">Normativa
@@ -131,7 +133,7 @@
                 <a class="dropdown-item" onclick="document.getElementById('modal_autoconsumes').click()"
                   href="#">autoconsumes
                 </a>
-              </li>
+              </li> -->
               <li><a class="dropdown-item" href="#">Acerca de Asolear</a></li>
             </ul>
           </li>
@@ -142,6 +144,8 @@
 
 
   <section>
+    <button hidden id='modal_guia_autoconsumidor_5_pasos' type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#exampleModal" data-bs-whatever="https://www.idae.es/sites/default/files/documentos/publicaciones_idae/guia_autoconsumo_5_pasos_ok.pdf">SIR</button>
     <button hidden id='modal_autoconsumes' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#exampleModal" data-bs-whatever="https://autoconsumes.github.io/">SIR</button>
     <button hidden id='modal_SIR' type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -182,14 +186,13 @@
   </section>
 
 
-
   <section class="icons">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-4">
           <a onclick="document.getElementById('modal_SIR').click()" href="#">
             <div class="icon  mb-4">
-              <img src="img/app-screenshots/hogares.png" alt=""  class="img-fluid" />
+              <img src="img/app-screenshots/hogares.png" alt="" class="img-fluid" />
             </div>
             <h3>Hogares</h3>
             <p class="mb-0">
