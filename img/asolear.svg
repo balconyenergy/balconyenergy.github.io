@@ -14,7 +14,10 @@
    height="135.40141mm"
    width="135.60226mm"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="asolear.svg">
+   sodipodi:docname="asolear.svg"
+   inkscape:export-filename="asolear_logo.png"
+   inkscape:export-xdpi="93"
+   inkscape:export-ydpi="93">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,16 +27,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="800"
+     inkscape:window-width="1920"
      inkscape:window-height="1016"
      id="namedview25"
      showgrid="false"
-     inkscape:zoom="0.44346944"
-     inkscape:cx="512.77341"
-     inkscape:cy="49.89416"
-     inkscape:window-x="1120"
+     inkscape:zoom="0.88693888"
+     inkscape:cx="351.76721"
+     inkscape:cy="114.00943"
+     inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="g3468"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -199,7 +202,10 @@
        inkscape:connector-curvature="0"
        d="m -599.82626,356.67425 c -442.96014,346.66444 495.12973,-111.82636 -50.53558,24.69924 -545.66526,136.5256 497.80738,99.22892 -56.21268,2.00921 -554.01998,-97.21974 414.40963,293.12664 -52.17002,-21.02825 -466.57966,-314.154881 259.35668,436.34008 -39.10674,-40.42973 -298.46342,-476.76981 59.45867,504.10637 -19.28151,-52.84051 -78.74015,-556.9469 -150.72035,484.70809 3.87764,-56.11471 154.59798,-540.82286 -334.83845,381.49935 26.36631,-49.6862 361.20476,-431.18555 -461.05996,212.32595 44.29602,-34.66644 505.35592,-246.99241 -507.55998,6.43941 54.56653,-13.65256 562.12647,-20.091991 -466.29821,-200.560522 55.402,9.72197 521.70024,210.28249 -344.40934,-372.88174 46.65794,31.41546 391.06733,404.29721 -162.96889,-480.72827 29.84636,47.67699 192.81526,528.4053 46.65028,-505.45257 7.874,55.6947 -38.77626,561.14727 248.20325,-442.77951 -15.45981,54.08228 -263.66305,496.86179 406.83963,-303.545861 -36.12046,43.11855 z"
        id="path4942-2-6"
-       style="opacity:0.97000002;fill:url(#radialGradient4950-3-5);fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1" />
+       style="opacity:0.97000002;fill:url(#radialGradient4950-3-5);fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1"
+       inkscape:export-filename="./path4942-2-6.png"
+       inkscape:export-xdpi="93"
+       inkscape:export-ydpi="93" />
     <text
        id="text4960-9-2"
        y="237.73166"
@@ -221,5 +227,5 @@
            height="807.27094"
            x="-99.217659"
            y="-92.572372" /></flowRegion><flowPara
-         id="flowPara870"></flowPara></flowRoot>  </g>
+         id="flowPara870" /></flowRoot>  </g>
 </svg>
