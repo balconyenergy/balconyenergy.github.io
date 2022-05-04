@@ -150,7 +150,7 @@ body {
   
   /* Mark input boxes that gets an error on validation: */
   input.invalid {
-    background-color: #ffdddd;
+    background-color: orange;
   }
   
   /* Hide all steps by default: */
