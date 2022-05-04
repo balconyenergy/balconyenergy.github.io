@@ -153,16 +153,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="hogar.html">HOGAR</a>
+            <a class="nav-link" onclick="document.getElementById('modal_HOGARES').click()" href="#">HOGARES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href=" empresa.html">EMPRESA</a>
-          </li>          
-          <li class="nav-item">
-            <a class="nav-link"  href="colectivo">AUTOCONSUMO COLECTIVO</a>
+            <a class="nav-link" onclick="document.getElementById('modal_EMPRESAS').click()" href="#">EMPRESAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="comunidad">COMUNIDAD ENERGETICA</a>
+            <a class="nav-link" onclick="document.getElementById('modal_COMUNIDADES').click()" href="#">COMUNIDADES</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -213,12 +210,16 @@
       data-bs-target="#exampleModal" data-bs-whatever="https://autoconsumes.github.io/">SIR</button>
     <button hidden id='modal_SIR' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#exampleModal" data-bs-whatever="https://asolear.es/presupuesto_hogar/"></button>
+
     <button hidden id='modal_HOGARES' type="button" class="btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#exampleModal" data-bs-whatever="formulario_hogar.html"></button>
+      data-bs-target="#exampleModal" data-bs-whatever="https://asolear.es/presupuesto_hogar/"></button>
+
     <button hidden id='modal_EMPRESAS' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#exampleModal" data-bs-whatever="https://asolear.es/presupuesto_empresa/"></button>
+
     <button hidden id='modal_COMUNIDADES' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#exampleModal" data-bs-whatever="https://asolear.es/presupuesto_comunidad/">Ayuda</button>
+
     <button hidden id='modal_politica_de_privacidad' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#exampleModal" data-bs-whatever="https://asolear.es/politica_de_privacidad/">ja</button>
     <button hidden id='modal_ja' type="button" class="btn btn-primary" data-bs-toggle="modal"
