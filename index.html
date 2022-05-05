@@ -29,6 +29,12 @@
       }
     }
   </style>
+  <!-- Add Google Maps Via JavaScript-->
+  <script type="text/javascript" src="static/JavaScript/mapa.js"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNT1Fptd2xsBhUkzHB8gAP7lbwFIUzUas&libraries=places"></script> -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNo8yVR1bVgiLVO2QyXaRnHZRuMjVNuZ4&libraries=places"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
 
   <!-- Custom styles for this template -->
@@ -42,8 +48,8 @@
       <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary "> -->
 
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://asolear.es/"><img src="img/asolear.svg" alt="" class="img-fluid" width="30"
-            height="30" /></a>
+        <a class="navbar-brand" href="https://asolear.es/"><img src="img/asolear.svg" alt="" class="img-fluid"
+            width="30" height="30" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -57,7 +63,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item"
-                    onclick="document.getElementById('modal_guia_autoconsumidor_5_pasos').click()" href="hogar.html">HOGAR</a>
+                    onclick="document.getElementById('modal_guia_autoconsumidor_5_pasos').click()"
+                    href="hogar.html">HOGAR</a>
                 </li>
                 <li><a class="dropdown-item" onclick="document.getElementById('modal_guia_profesional').click()"
                     href="#">EMPRESA</a>
@@ -228,13 +235,13 @@
         <div class="p-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold"> Pasos necesarios.</h1>
-            <p class="col-md-8 fs-4">Somos una  empresa que se dedica específicamente a las renovables.
+            <p class="col-md-8 fs-4">Somos una empresa que se dedica específicamente a las renovables.
               Llevamos a cabo los pasos técnicos y administrativos necesarios,
               además de realizar la instalación con todas las garantías de seguridad.</p>
             <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
           </div>
         </div>
-  
+
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
@@ -292,7 +299,8 @@
         <div class="p-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">¿Por qué esta apuesta por el autoconsumo?</h1>
-            <p class="col-md-12 fs-4">Supone un ahorro directo para el autoconsumidor y puede reducir el precio de la electricidad
+            <p class="col-md-12 fs-4">Supone un ahorro directo para el autoconsumidor y puede reducir el precio de la
+              electricidad
               para el resto de consumidores, puesto que el autoconsumo contribuye a abaratar el precio
               del mercado eléctrico: por un lado, al disminuir la demanda (quien autoconsume compra
               menos energía de la red) y, por otro lado, al aumentar la oferta de energía renovable (si
@@ -300,8 +308,8 @@
             <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
           </div>
         </div>
-  
-  
+
+
 
 
 
@@ -312,7 +320,8 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Por el descenso de precios  <span class="text-muted">de algunas de las tecnologías renovables</span>
+            <h2 class="featurette-heading">Por el descenso de precios <span class="text-muted">de algunas de las
+                tecnologías renovables</span>
             </h2>
             <p class="lead">en especial la solar
               fotovoltaica, que ha reducido sus costes un 80% en cinco años, y por el desarrollo
@@ -322,7 +331,7 @@
           <div class="col-md-5">
             <img src="img/app-screenshots/technician-gf9f7002eb_640.jpg" class="img-fluid" alt="...">
 
-            
+
           </div>
         </div>
 
@@ -331,7 +340,7 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">¿ Autoconsumo sin excedentes o con excedentes?
-            <p class="lead">En Asolear le optimizamos su instalacin para NO tener excedentes</p>
+              <p class="lead">En Asolear le optimizamos su instalacin para NO tener excedentes</p>
           </div>
           <div class="col-md-5 order-md-1">
 
@@ -341,7 +350,7 @@
 
         <hr class="featurette-divider">
 
-        
+
 
         <hr class="featurette-divider">
 
@@ -355,13 +364,46 @@
 
 
       <form id="regForm" action="">
+        <h1>Estudio de viabilidad gratuito:</h1>
 
-        <h1>Register:</h1>
 
         <!-- One "tab" for each step in the form: -->
-        <div class="tab">Name:
-          <p><input placeholder="First name..." oninput="this.className = ''"></p>
-          <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+        <div class="tab">
+          <h5>Estara en: </h5>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <label for="validationServer03">Buscar</label>
+                  <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
+                    placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback" required
+                    value="C. Moby Dick, 30, 29004 Málaga, Spain">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for="validationServer03">Arrastre el marcador</label>
+
+                <div id="map"></div>
+                <!-- Add Styling for Google Maps-->
+                <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
+                </link>
+              </div>
+              <div>
+                <div id="validationServer03Feedback" class="valid-feedback">
+                  <div>
+                    <b>Coordenadas:</b>
+                    <span id="coordinates" name="coordinates"></span>
+                  </div>
+                </div>
+                <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
+                <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div class="tab">Contact Info:
