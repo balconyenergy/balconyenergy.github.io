@@ -31,6 +31,7 @@
   </style>
   <!-- Add Google Maps Via JavaScript-->
   <script type="text/javascript" src="static/JavaScript/mapa.js"></script>
+  <script type="text/javascript" src="static/JavaScript/formulario_pasos.js"></script>
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNT1Fptd2xsBhUkzHB8gAP7lbwFIUzUas&libraries=places"></script> -->
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNo8yVR1bVgiLVO2QyXaRnHZRuMjVNuZ4&libraries=places"></script>
@@ -369,7 +370,41 @@
 
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
+          <h5>Estara en: </h5>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <label for="validationServer03">Buscar</label>
+                  <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
+                    placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback" required
+                    value="C. Moby Dick, 30, 29004 Málaga, Spain">
+                </div>
+              </div>
+            </div>
 
+            <div>
+              <div>
+                <label for="validationServer03">Arrastre el marcador</label>
+
+                <div id="map"></div>
+                <!-- Add Styling for Google Maps-->
+                <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
+                </link>
+              </div>
+              <div>
+                <div id="validationServer03Feedback" class="valid-feedback">
+                  <div>
+                    <b>Coordenadas:</b>
+                    <span id="coordinates" name="coordinates"></span>
+                  </div>
+                </div>
+                <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
+                <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div class="tab">Contact Info:
@@ -415,39 +450,76 @@
           <img src="img/asolear.svg" alt="" class="img-fluid" width="30" height="30" /></a>
 
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Autoconsumo</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Comunidad E.</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Eficiencia</a></li>
         </ul>
       </footer>
 
 
-     
 
 
-
-
-      <nav id="misCookies" class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-danger">
-        <a class="navbar-brand" href="#">En Asolear  utilizamos cookies para Medir la interacción de la audiencia y estadísticas del sitio web</a>
-        <button class="btn btn-sm btn-warning" onclick="myFunction()">Ocultar</button>
-      </nav>
 
   </main>
 
 
 
 
+
+
+
+
+
+
+
+  <section>
+    <!-- Button trigger modal -->
+    <button  id='boton_modal_formulario_hogar' type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#modal_formulario_hogar">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div  class="modal fade" id="modal_formulario_hogar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal_formulario_hogarLabel">formulario</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+
+  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
   <section id="cookies">
     <!-- Button trigger modal -->
-    <button  id='modal_cookie_button' type="button" class="btn btn-primary" data-bs-toggle="modal"
+    <button hidden  id='modal_cookie_button' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#modal_cookie">
       Launch demo modal
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="modal_cookie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div  class="modal fade" id="modal_cookie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="modal_cookieLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -456,41 +528,7 @@
             <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
           </div>
           <div class="modal-body">
-            <h5>Estara en: </h5>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <label for="validationServer03">Buscar</label>
-                    <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
-                      placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback" required
-                      value="C. Moby Dick, 30, 29004 Málaga, Spain">
-                  </div>
-                </div>
-              </div>
-  
-              <div>
-                <div>
-                  <label for="validationServer03">Arrastre el marcador</label>
-  
-                  <div id="map"></div>
-                  <!-- Add Styling for Google Maps-->
-                  <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
-                  </link>
-                </div>
-                <div>
-                  <div id="validationServer03Feedback" class="valid-feedback">
-                    <div>
-                      <b>Coordenadas:</b>
-                      <span id="coordinates" name="coordinates"></span>
-                    </div>
-                  </div>
-                  <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
-                  <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
-                </div>
-              </div>
-  
-            </div>
+
             <h3> En Asolear Ingenieros utilizamos cookies y datos para: </h3>
             <p> Proporcionar y mantener servicios, para hacer un seguimiento de las interrupciones y prevenir el spam,
               el fraude y los abusos. </p>
@@ -509,107 +547,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">   </script>
 
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("misCookies");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-
-    function hazUnaVez() {
-      if (document.cookie.replace(/(?:(?:^|.*;\s*)fdafasafasddfasdf\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-        document.getElementById('modal_cookie_button').click()
-        document.getElementById('modal_cookie_button').click()
-        // alert("evento load detectado!");
-        document.cookie = "fdafasafasddfasdf=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=None; Secure";
-      }
-    }
-    window.onload = hazUnaVez;
-  </script>
-
-
-
-  <script>
-
-    var currentTab = 0; // Current tab is set to be the first tab (0)
-    showTab(currentTab); // Display the current tab
-
-    function showTab(n) {
-      // This function will display the specified tab of the form img/app-screenshots/photovoltaic-gcf288fe16_640.jpg
-      var x = document.getElementsByClassName("tab");
-      x[n].style.display = "block";
-      // img/app-screenshots/photovoltaic-gcf288fe16_640.jpg and fix the Previous/Next buttons:
-      if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
-      } else {
-        document.getElementById("prevBtn").style.display = "inline";
-      }
-      if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
-      } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
-      }
-      // img/app-screenshots/photovoltaic-gcf288fe16_640.jpg and run a function that displays the correct step indicator:
-      fixStepIndicator(n)
-    }
-
-    function nextPrev(n) {
-      // This function will figure out which tab to display
-      var x = document.getElementsByClassName("tab");
-      // Exit the function if any field in the current tab is invalid:
-      if (n == 1 && !validateForm()) return false;
-      // Hide the current tab:
-      x[currentTab].style.display = "none";
-      // Increase or decrease the current tab by 1:
-      currentTab = currentTab + n;
-      // if you have reached the end of the formimg/app-screenshots/photovoltaic-gcf288fe16_640.jpg :
-      if (currentTab >= x.length) {
-        //img/app-screenshots/photovoltaic-gcf288fe16_640.jpgthe form gets submitted:
-        document.getElementById("regForm").submit();
-        return false;
-      }
-      // Otherwise, display the correct tab:
-      showTab(currentTab);
-    }
-
-    function validateForm() {
-      // This function deals with validation of the form fields
-      var x, y, i, valid = true;
-      x = document.getElementsByClassName("tab");
-      y = x[currentTab].getElementsByTagName("input");
-      // A loop that checks every input field in the current tab:
-      for (i = 0; i < y.length; i++) {
-        // If a field is emptyimg/app-screenshots/photovoltaic-gcf288fe16_640.jpg
-        if (y[i].value == "") {
-          // add an "invalid" class to the field:
-          y[i].className += " invalid";
-          // and set the current valid status to false:
-          valid = false;
-        }
-      }
-      // If the valid status is true, mark the step as finished and valid:
-      if (valid) {
-        document.getElementsByClassName("step")[currentTab].className += " finish";
-      }
-      return valid; // return the valid status
-    }
-
-    function fixStepIndicator(n) {
-      // This function removes the "active" class of all stepsimg/app-screenshots/photovoltaic-gcf288fe16_640.jpg
-      var i, x = document.getElementsByClassName("step");
-      for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
-      }
-      //img/app-screenshots/photovoltaic-gcf288fe16_640.jpg and adds the "active" class to the current step:
-      x[n].className += " active";
-    }
-
-
-  </script>
 
 
 
