@@ -119,7 +119,7 @@
                 data-track-action="phone_link">☎ 952 289 557</a>
             </li>
             <li class="nav-item">
-              <a href="https://wa.me/34600366211/?text=tu%20texto%20personalizado" target="_blank">
+              <a href="https://wa.me/34600366211/?text=Autoconsumo%20Eficiencia%20Comunidad" target="_blank">
                 <img src="img/logo-wasap.png" width="40" height="40">
               </a>
             </li>
@@ -165,7 +165,9 @@
               <h1>Autoconsumo fotovoltaico:</h1>
               <p>En Asolear ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
                 solares del mercado.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Pide tu estudio gratuito</a></p>
+              <p><a class="btn btn-lg btn-primary"
+                  onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
+                  gratuito</a></p>
             </div>
           </div>
         </div>
@@ -178,7 +180,9 @@
                 <h1>Autoconsumo fotovoltaico:</h1>
                 <p>En Asolear ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
                   solares del mercado.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Pide tu estudio gratuito</a></p>
+                <p><a class="btn btn-lg btn-primary"
+                    onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
+                    gratuito</a></p>
               </div>
             </div>
           </div>
@@ -396,41 +400,140 @@
       <div id="contacto" class="p-5 mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">¿Como podemos ayudarte?</h1>
-          <p class="col-md-12 fs-4">Supone un ahorro directo para el autoconsumidor y puede reducir el precio de la
-            electricidad
-            para el resto de consumidores, puesto que el autoconsumo contribuye a abaratar el precio
-            del mercado eléctrico: por un lado, al disminuir la demanda (quien autoconsume compra
-            menos energía de la red) y, por otro lado, al aumentar la oferta de energía renovable (si
-            hay excedentes, hay más energía negociada en el mercado eléctrico).</p>
+          <p class="col-md-12 fs-4">Estamos a tu disposicion L-V de 9-18 h.</p>
           <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
         </div>
-      </div>
 
 
 
-
-      <div class="container marketing">
-
-
-        <!-- Container (Contact Section) -->
-
-        <form id="form" class="container-fluid bg-grey" method="POST">
-          <h2>CONTACTO</h2>
-
-
-          <div class="col-sm-7">
-            <div class="row">
-              <div class="column">
-                <img src="img/city-g122f08f28_640.jpg" style="width:100%">
+        <div class="card mb-3" style="max-width: 100%;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="img/city-g122f08f28_640.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Oficina Malaga</h5>
+                <p class="card-text">C/ Severo Ochoa, 27 - 29590, PTA
+                  Málaga</p>
+                <a class="nav-link" data-global="phone" href="tel:952289557" data-track-event="click"
+                  data-track-action="phone_link">☎ 952 289 557</a>
               </div>
-              <div class="column"></div>
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Oficina Granada</h5>
+                <p class="card-text">C/ Eras Bajas, 8 - 18080, Lanteira
+                  Granada</p>
+                <a class="nav-link" data-global="phone" href="tel:952289557" data-track-event="click"
+                  data-track-action="phone_link">☎ 958 673 336</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <h2>Necesito un servicio tecnico</h2>
+
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                <form id="form" class="container-fluid bg-grey" method="POST">
+                  <h2>CONTACTO</h2>
+
+
+                  <div class="col-sm-7">
+                    <div class="row">
+                      <div class="column">
+                      </div>
+                      <div class="column"></div>
+                      <label for="email">Nombre</label>
+                      <input type="name" class="form-control" id="nombre" placeholder="Nombre">
+
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+
+                    </div>
+                    <div class="col-sm-7">
+
+                      <label for="name">soy</label>
+                      <select type="name" class="form-control" id="funcion" required>
+                        <option value="Instalador" selected>Instalador</option>
+                        <option value="Empresa">Empresa</option>
+                        <option value="Ingenieria">Ingenieria</option>
+                        <option value="Particular">Particular</option>
+                      </select>
+
+
+
+                      <label for="name">Servicio</label>
+                      <select type="name" class="form-control" id="Servicio" required>
+                        <option value="servicio gestión energética" selected>servicio gestión energética</option>
+                        <option value="Optimizacion de Tarifa">Optimizacion de Tarifa</option>
+                        <option value="Consutoria energética">Consutoria energética</option>
+                      </select>
+
+                      <label for="Telefono">Telefono</label>
+                      <input type="name" class="form-control" id="Telefono" placeholder="Telefono">
+
+
+                      <label for="name">Comentario o consulta</label>
+                      <input type="name" class="form-control" id="message2" placeholder="cometario" required>
+
+                      <h4 id="response"></h4>
+
+                      <label><input type="checkbox" class="agree"> Acepto la</label> <a
+                        href="./politicaprivacidad.html">Política
+                        de Privacidad.</a>
+                      <input type="submit" class="btn btn-primary" value="Enviar">
+
+
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <p><span class="glyphicon glyphicon-map-marker"></span> </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h2>Ofrezco un servicio Tecnico</h2>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">Si eres Instalador, ... 
+              <strong>montador de paneles fotovoltaicos.</strong> y queres trabajar o colaborar con nosotros, adjuntanos tu curriculum y y nos pondremos en contacto contigo lo antes posible.
+            
               <label for="email">Nombre</label>
               <input type="name" class="form-control" id="nombre" placeholder="Nombre">
 
               <label for="email">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Enter email" required>
 
-
+            </div>
+            <div class="col-sm-7">
 
               <label for="name">soy</label>
               <select type="name" class="form-control" id="funcion" required>
@@ -440,183 +543,167 @@
                 <option value="Particular">Particular</option>
               </select>
 
-
-
-              <label for="name">Servicio</label>
-              <select type="name" class="form-control" id="Servicio" required>
-                <option value="servicio gestión energética" selected>servicio gestión energética</option>
-                <option value="Optimizacion de Tarifa">Optimizacion de Tarifa</option>
-                <option value="Consutoria energética">Consutoria energética</option>
-              </select>
-
-              <label for="Telefono">Telefono</label>
-              <input type="name" class="form-control" id="Telefono" placeholder="Telefono">
-
-
-              <label for="name">Comentario o consulta</label>
-              <input type="name" class="form-control" id="message2" placeholder="cometario" required>
-
-              <h4 id="response"></h4>
-
-              <label><input type="checkbox" class="agree"> Acepto la</label> <a
-                href="./politicaprivacidad.html">Política
-                de Privacidad.</a>
-              <input type="submit" class="btn btn-primary" value="Enviar">
-
-
-              <div class="row">
-                <div class="col-sm-5">
-                  <p><span class="glyphicon glyphicon-map-marker"></span> C/ Severo Ochoa, 27 - 29590, PTA Málaga </p>
-                  <p><span class="glyphicon glyphicon-phone"></span> +34 600 366 211</p>
-                  <!-- <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> -->
-                </div>
-              </div>
-            </div>
-
-        </form>
-
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- FOOTER -->
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">&copy; 2022 Asolear Ingenieros SL</p>
-
-        <a href="/"
-          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="img/asolear.svg" alt="" class="img-fluid" width="30" height="30" /></a>
-
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Autoconsumo</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Comunidad E.</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Eficiencia</a></li>
-        </ul>
-      </footer>
-
-
-      <section>
-        <!-- Button trigger modal -->
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="modal_formulario_hogar" data-bs-keyboard="false"
-          aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de viabilidad de autoconsumo solar
-                  residencial gratuito.</h5>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close"> Salir</button>
-              </div>
-              <div class="modal-body">
-
-
-                <div class="container marketing">
-                  <form class="row g-3" id="regForm" action="">
-                    <h1></h1>
-                    <!-- One "tab" for each step in the form: -->
-                    <div class="tab">
-                      <h5>Estara en: </h5>
-                      <div>
-                        <div class="row featurette">
-                          <div class="col-12">
-                            <div class="row mb-3">
-                              <label for="validationServer03">Buscar</label>
-                              <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
-                                placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback"
-                                required value="C. Moby Dick, 30, 29004 Málaga, Spain">
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div>
-                            <label for="validationServer03">Arrastre el marcador</label>
-
-                            <div class="container" id="map"></div>
-                            <!-- Add Styling for Google Maps-->
-                            <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
-                            </link>
-                          </div>
-                          <div>
-                            <div id="validationServer03Feedback" class="valid-feedback">
-                              <div>
-                                <b>Coordenadas:</b>
-                                <span id="coordinates" name="coordinates"></span>
-                              </div>
-                            </div>
-                            <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
-                            <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="tab">Contact Info:
-                      <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
-                      <p><input placeholder="Phone..." oninput="this.className = ''"></p>
-                    </div>
-
-                    <div class="tab">Birthday:
-                      <p><input placeholder="dd" oninput="this.className = ''"></p>
-                      <p><input placeholder="mm" oninput="this.className = ''"></p>
-                      <p><input placeholder="yyyy" oninput="this.className = ''"></p>
-                    </div>
-
-                    <div class="tab">Login Info:
-                      <p><input placeholder="Username..." oninput="this.className = ''"></p>
-                      <p><input placeholder="Password..." oninput="this.className = ''"></p>
-                    </div>
-
-                    <div style="overflow:auto;">
-                      <div style="float:right;">
-                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                      </div>
-                    </div>
-
-                    <!-- Circles which indicates the steps of the form: -->
-                    <div style="text-align:center;margin-top:40px;">
-                      <span class="step"></span>
-                      <span class="step"></span>
-                      <span class="step"></span>
-                      <span class="step"></span>
-                    </div>
-
-                  </form>
-                </div>
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-              </div>
+            
+            
             </div>
           </div>
         </div>
-      </section>
+
+    </div>
+
+
+
+
+
+
+    <div class="container marketing">
+
+
+      <!-- Container (Contact Section) -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2022 Asolear Ingenieros SL</p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <img src="img/asolear.svg" alt="" class="img-fluid" width="30" height="30" /></a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Autoconsumo</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Comunidad E.</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Eficiencia</a></li>
+      </ul>
+    </footer>
+
+
+    <section>
+      <!-- Button trigger modal -->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal_formulario_hogar" data-bs-keyboard="false"
+        aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de viabilidad de autoconsumo solar
+                residencial gratuito.</h5>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close"> Salir</button>
+            </div>
+            <div class="modal-body">
+
+
+              <div class="container marketing">
+                <form class="row g-3" id="regForm" action="">
+                  <h1></h1>
+                  <!-- One "tab" for each step in the form: -->
+                  <div class="tab">
+                    <h5>Estara en: </h5>
+                    <div>
+                      <div class="row featurette">
+                        <div class="col-12">
+                          <div class="row mb-3">
+                            <label for="validationServer03">Buscar</label>
+                            <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
+                              placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback"
+                              required value="C. Moby Dick, 30, 29004 Málaga, Spain">
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="validationServer03">Arrastre el marcador</label>
+
+                          <div class="container" id="map"></div>
+                          <!-- Add Styling for Google Maps-->
+                          <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
+                          </link>
+                        </div>
+                        <div>
+                          <div id="validationServer03Feedback" class="valid-feedback">
+                            <div>
+                              <b>Coordenadas:</b>
+                              <span id="coordinates" name="coordinates"></span>
+                            </div>
+                          </div>
+                          <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
+                          <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab">Contact Info:
+                    <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                    <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+                  </div>
+
+                  <div class="tab">Birthday:
+                    <p><input placeholder="dd" oninput="this.className = ''"></p>
+                    <p><input placeholder="mm" oninput="this.className = ''"></p>
+                    <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+                  </div>
+
+                  <div class="tab">Login Info:
+                    <p><input placeholder="Username..." oninput="this.className = ''"></p>
+                    <p><input placeholder="Password..." oninput="this.className = ''"></p>
+                  </div>
+
+                  <div style="overflow:auto;">
+                    <div style="float:right;">
+                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                  </div>
+
+                  <!-- Circles which indicates the steps of the form: -->
+                  <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button> -->
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
