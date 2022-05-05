@@ -6,7 +6,7 @@ function hazUnaVez() {
     }
 }
 
+// alert('que pasa')
 
-function formularioalasnarices() { document.getElementById('boton_modal_formulario_hogar').click() }
-
-window.onload = formularioalasnarices;hazUnaVez; 
+window.onload = hazUnaVez
+// window.onload = formularioalasnarices; 
