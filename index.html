@@ -29,17 +29,10 @@
       }
     }
   </style>
-  <!-- Add Google Maps Via JavaScript-->
-  <script type="text/javascript" src="static/JavaScript/mapa.js"></script>
-  <script type="text/javascript" src="static/JavaScript/formulario_pasos.js"></script>
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNT1Fptd2xsBhUkzHB8gAP7lbwFIUzUas&libraries=places"></script> -->
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNo8yVR1bVgiLVO2QyXaRnHZRuMjVNuZ4&libraries=places"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
 
   <!-- Custom styles for this template -->
-  <link href="asolear.css" rel="stylesheet">
+  <link href="static/styles/asolear.css" rel="stylesheet">
 </head>
 
 <body>
@@ -351,10 +344,6 @@
 
         <hr class="featurette-divider">
 
-
-
-        <hr class="featurette-divider">
-
         <!-- /END THE FEATURETTES -->
 
       </div><!-- /.container -->
@@ -364,81 +353,8 @@
 
 
 
-      <form id="regForm" action="">
-        <h1>Estudio de viabilidad gratuito:</h1>
 
 
-        <!-- One "tab" for each step in the form: -->
-        <div class="tab">
-          <h5>Estara en: </h5>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <label for="validationServer03">Buscar</label>
-                  <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
-                    placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback" required
-                    value="C. Moby Dick, 30, 29004 Málaga, Spain">
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <label for="validationServer03">Arrastre el marcador</label>
-
-                <div id="map"></div>
-                <!-- Add Styling for Google Maps-->
-                <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
-                </link>
-              </div>
-              <div>
-                <div id="validationServer03Feedback" class="valid-feedback">
-                  <div>
-                    <b>Coordenadas:</b>
-                    <span id="coordinates" name="coordinates"></span>
-                  </div>
-                </div>
-                <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
-                <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="tab">Contact Info:
-          <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
-          <p><input placeholder="Phone..." oninput="this.className = ''"></p>
-        </div>
-
-        <div class="tab">Birthday:
-          <p><input placeholder="dd" oninput="this.className = ''"></p>
-          <p><input placeholder="mm" oninput="this.className = ''"></p>
-          <p><input placeholder="yyyy" oninput="this.className = ''"></p>
-        </div>
-
-        <div class="tab">Login Info:
-          <p><input placeholder="Username..." oninput="this.className = ''"></p>
-          <p><input placeholder="Password..." oninput="this.className = ''"></p>
-        </div>
-
-        <div style="overflow:auto;">
-          <div style="float:right;">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-          </div>
-        </div>
-
-        <!-- Circles which indicates the steps of the form: -->
-        <div style="text-align:center;margin-top:40px;">
-          <span class="step"></span>
-          <span class="step"></span>
-          <span class="step"></span>
-          <span class="step"></span>
-        </div>
-
-      </form>
 
 
       <!-- FOOTER -->
@@ -459,6 +375,127 @@
 
 
 
+      <section>
+        <!-- Button trigger modal -->
+        <button id='boton_modal_formulario_hogar' type="button" class="btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#modal_formulario_hogar">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal_formulario_hogar" data-bs-backdrop="static" data-bs-keyboard="false"
+           aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal_formulario_hogarLabel">formulario</h5>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <script type="text/javascript" src="static/JavaScript/mapa.js"></script>
+
+              </div>
+              <div class="modal-body">
+
+
+                <div class="container marketing">
+                  <form class="row g-3" id="regForm" action="">
+                    <h1>Estudio de viabilidad gratuito:</h1>
+                    <!-- One "tab" for each step in the form: -->
+                    <div class="tab">
+                      <h5>Estara en: </h5>
+                      <div>
+                        <div class="row featurette">
+                          <div class="col-12">
+                            <div class="row mb-3">
+                              <label for="validationServer03">Buscar</label>
+                              <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
+                                placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback" required
+                                value="C. Moby Dick, 30, 29004 Málaga, Spain">
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <label for="validationServer03">Arrastre el marcador</label>
+          
+                            <div class="container" id="map"></div>
+                            <!-- Add Styling for Google Maps-->
+                            <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
+                            </link>
+                          </div>
+                          <div>
+                            <div id="validationServer03Feedback" class="valid-feedback">
+                              <div>
+                                <b>Coordenadas:</b>
+                                <span id="coordinates" name="coordinates"></span>
+                              </div>
+                            </div>
+                            <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
+                            <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="tab">Contact Info:
+                      <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                      <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+                    </div>
+          
+                    <div class="tab">Birthday:
+                      <p><input placeholder="dd" oninput="this.className = ''"></p>
+                      <p><input placeholder="mm" oninput="this.className = ''"></p>
+                      <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+                    </div>
+          
+                    <div class="tab">Login Info:
+                      <p><input placeholder="Username..." oninput="this.className = ''"></p>
+                      <p><input placeholder="Password..." oninput="this.className = ''"></p>
+                    </div>
+          
+                    <div style="overflow:auto;">
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                      </div>
+                    </div>
+          
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                    </div>
+          
+                  </form>
+                </div>
+          
+
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- Add Google Maps Via JavaScript-->
+      <script type="text/javascript" src="static/JavaScript/formulario_pasos.js"></script>
+      <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNT1Fptd2xsBhUkzHB8gAP7lbwFIUzUas&libraries=places"></script> -->
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNo8yVR1bVgiLVO2QyXaRnHZRuMjVNuZ4&libraries=places"></script>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
 
 
   </main>
@@ -473,36 +510,6 @@
 
 
 
-  <section>
-    <!-- Button trigger modal -->
-    <button  id='boton_modal_formulario_hogar' type="button" class="btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#modal_formulario_hogar">
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div  class="modal fade" id="modal_formulario_hogar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal_formulario_hogarLabel">formulario</h5>
-            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-          </div>
-          <div class="modal-body">
-
-  
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
 
 
 
@@ -513,13 +520,13 @@
 
   <section id="cookies">
     <!-- Button trigger modal -->
-    <button hidden  id='modal_cookie_button' type="button" class="btn btn-primary" data-bs-toggle="modal"
+    <button hidden id='modal_cookie_button' type="button" class="btn btn-primary" data-bs-toggle="modal"
       data-bs-target="#modal_cookie">
       Launch demo modal
     </button>
 
     <!-- Modal -->
-    <div  class="modal fade" id="modal_cookie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal fade" id="modal_cookie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="modal_cookieLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -545,7 +552,8 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">   </script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">   </script>
 
 
 

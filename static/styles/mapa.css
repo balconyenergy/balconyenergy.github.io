@@ -7,7 +7,6 @@
     margin-right: 100px; */
 }
 
-body {
-    /* padding-top: 70px; */
-
+.pac-container {
+    z-index: 10000 !important;
 }
