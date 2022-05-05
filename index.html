@@ -266,7 +266,7 @@
 
 
 
-        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="h-100 p-5 text-white border bg-secondary rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold"> Pasos necesarios.</h1>
             <p class="col-md-8 fs-4">Somos una empresa que se dedica específicamente a las renovables.
@@ -330,7 +330,7 @@
 
 
 
-        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="h-100 p-5 text-white border bg-secondary rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">¿Por qué esta apuesta por el autoconsumo?</h1>
             <p class="col-md-12 fs-4">Supone un ahorro directo para el autoconsumidor y puede reducir el precio de la
@@ -395,13 +395,15 @@
 
 
 
+      <div class="container marketing">
 
 
-      <div id="contacto" class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">¿Como podemos ayudarte?</h1>
-          <p class="col-md-12 fs-4">Estamos a tu disposicion L-V de 9-18 h.</p>
-          <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
+        <div id="contacto" class="h-100 p-5 text-white border bg-secondary rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">¿Como podemos ayudarte?</h1>
+            <p class="col-md-12 fs-4">Estamos a tu disposicion L-V de 9-18 h.</p>
+            <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
+          </div>
         </div>
 
 
@@ -450,52 +452,61 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
+                <h2>CONTACTO</h2>
 
-                <form id="form" class="container-fluid bg-grey" method="POST">
-                  <h2>CONTACTO</h2>
 
+
+                <form action="https://formsubmit.co/admin@asolear.es" method="POST" enctype="multipart/form-data">
+                  <!-- comandos -->
+                  <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_autoresponse" value="Muchas gracias, en breve le contactaremos.">
+                  <input class="form-control" type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="https://asolear.es/index.html">
+                  <input type="hidden" name="_subject" value="HOGAR">
+                  <input type="hidden" name="_autoresponse" value="Gracias, en breve le contactaremos.">
 
                   <div class="col-sm-7">
                     <div class="row">
                       <div class="column">
                       </div>
                       <div class="column"></div>
-                      <label for="email">Nombre</label>
-                      <input type="name" class="form-control" id="nombre" placeholder="Nombre">
+                      <label for="Nombre">Nombre</label>
+                      <input name='nombre' class="form-control" id="nombre" placeholder="Nombre" required>
 
                       <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                      <input name='email' type="email" class="form-control" id="email" placeholder="Enter email"
+                        required>
 
                     </div>
                     <div class="col-sm-7">
 
                       <label for="name">soy</label>
-                      <select type="name" class="form-control" id="funcion" required>
+                      <select name='titular' class="form-control" id="funcion" required>
                         <option value="Instalador" selected>Instalador</option>
-                        <option value="Empresa">Empresa</option>
-                        <option value="Ingenieria">Ingenieria</option>
+                        <option value="Empresa">Empresario</option>
+                        <option value="Ingenieria">Administrador</option>
                         <option value="Particular">Particular</option>
                       </select>
 
 
 
                       <label for="name">Servicio</label>
-                      <select type="name" class="form-control" id="Servicio" required>
+                      <select name='servicio' class="form-control" id="Servicio" required>
                         <option value="servicio gestión energética" selected>servicio gestión energética</option>
-                        <option value="Optimizacion de Tarifa">Optimizacion de Tarifa</option>
-                        <option value="Consutoria energética">Consutoria energética</option>
+                        <option value="Intalacion de autoconsumo">Optimizacion de Tarifa</option>
+                        <option value="Gestion de Comunidad Energetica">Consutoria energética</option>
                       </select>
 
                       <label for="Telefono">Telefono</label>
-                      <input type="name" class="form-control" id="Telefono" placeholder="Telefono">
+                      <input name='telefono' class="form-control" id="Telefono" placeholder="Telefono" required>
 
 
                       <label for="name">Comentario o consulta</label>
-                      <input type="name" class="form-control" id="message2" placeholder="cometario" required>
+                      <input name='consulta' class="form-control" id="message2" placeholder="cometario" required>
 
                       <h4 id="response"></h4>
 
-                      <label><input type="checkbox" class="agree"> Acepto la</label> <a
+                      <label><input type="checkbox" class="agree" required> Acepto la</label> <a
                         href="./politicaprivacidad.html">Política
                         de Privacidad.</a>
                       <input type="submit" class="btn btn-primary" value="Enviar">
@@ -523,11 +534,12 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
-            <div class="accordion-body">Si eres Instalador, ... 
-              <strong>montador de paneles fotovoltaicos.</strong> y queres trabajar o colaborar con nosotros, adjuntanos tu curriculum y y nos pondremos en contacto contigo lo antes posible.
-            
+            <div class="accordion-body">Si eres Instalador, ...
+              <strong>montador de paneles fotovoltaicos.</strong> y queres trabajar o colaborar con nosotros, adjuntanos
+              tu curriculum y y nos pondremos en contacto contigo lo antes posible.
+
               <label for="email">Nombre</label>
-              <input type="name" class="form-control" id="nombre" placeholder="Nombre">
+              <input class="form-control" id="nombre" placeholder="Nombre">
 
               <label for="email">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Enter email" required>
@@ -536,19 +548,17 @@
             <div class="col-sm-7">
 
               <label for="name">soy</label>
-              <select type="name" class="form-control" id="funcion" required>
+              <select class="form-control" id="funcion" required>
                 <option value="Instalador" selected>Instalador</option>
                 <option value="Empresa">Empresa</option>
                 <option value="Ingenieria">Ingenieria</option>
                 <option value="Particular">Particular</option>
               </select>
-
-            
-            
             </div>
           </div>
         </div>
 
+      </div>
     </div>
 
 
