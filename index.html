@@ -202,7 +202,7 @@
       <div class="p-5 mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">¿Cuánto me cuesta y cuánto me ahorro?</h1>
-          <p class="col-md-8 fs-4">En la actualidad, un sistema de 3 kW puede cubrir la mayoría de las necesidades de
+          <p class="col-md-8 fs-4">En el caso residencial, en la actualidad, un sistema de 3 kW puede cubrir la mayoría de las necesidades de
             iluminación y consumo
             eléctrico de un hogar de cuatro miembros y una superficie de setenta metros cuadrados.</p>
           <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
@@ -411,7 +411,7 @@
         <div class="card mb-3" style="max-width: 100%;">
           <div class="row g-0">
             <div class="col-md-6">
-              <img src="img/city-g122f08f28_640.jpg" class="img-fluid rounded-start" alt="...">
+              <img src="img/building-ge34c66b02_640.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-6">
               <div class="card-body">
@@ -445,26 +445,20 @@
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
-                <h2>Necesito un servicio tecnico</h2>
-
+                <h2>Necesitas un servicio tecnico</h2>
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <h2>CONTACTO</h2>
-
-
-
                 <form action="https://formsubmit.co/admin@asolear.es" method="POST" enctype="multipart/form-data">
                   <!-- comandos -->
                   <input type="hidden" name="_template" value="table">
                   <input type="hidden" name="_autoresponse" value="Muchas gracias, en breve le contactaremos.">
                   <input class="form-control" type="hidden" name="_captcha" value="false">
                   <input type="hidden" name="_next" value="https://asolear.es/index.html">
-                  <input type="hidden" name="_subject" value="HOGAR">
+                  <input type="hidden" name="_subject" value="CONTACTO">
                   <input type="hidden" name="_autoresponse" value="Gracias, en breve le contactaremos.">
-
                   <div class="col-sm-7">
                     <div class="row">
                       <div class="column">
@@ -476,10 +470,8 @@
                       <label for="email">Email</label>
                       <input name='email' type="email" class="form-control" id="email" placeholder="Enter email"
                         required>
-
                     </div>
                     <div class="col-sm-7">
-
                       <label for="name">soy</label>
                       <select name='titular' class="form-control" id="funcion" required>
                         <option value="Instalador" selected>Instalador</option>
@@ -488,13 +480,11 @@
                         <option value="Particular">Particular</option>
                       </select>
 
-
-
                       <label for="name">Servicio</label>
                       <select name='servicio' class="form-control" id="Servicio" required>
-                        <option value="servicio gestión energética" selected>servicio gestión energética</option>
-                        <option value="Intalacion de autoconsumo">Optimizacion de Tarifa</option>
-                        <option value="Gestion de Comunidad Energetica">Consutoria energética</option>
+                        <option value="servicio gestión energética" selected>Autoconsumo energético</option>
+                        <option value="Intalacion de autoconsumo">Eficiencia energética</option>
+                        <option value="Gestion de Comunidad Energetica">Comunidad energética</option>
                       </select>
 
                       <label for="Telefono">Telefono</label>
@@ -519,7 +509,6 @@
                       </div>
                     </div>
                   </div>
-
                 </form>
               </div>
             </div>
@@ -529,32 +518,73 @@
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <h2>Ofrezco un servicio Tecnico</h2>
+              <h2>Ofreces un servicio Tecnico</h2>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
-            <div class="accordion-body">Si eres Instalador, ...
-              <strong>montador de paneles fotovoltaicos.</strong> y queres trabajar o colaborar con nosotros, adjuntanos
-              tu curriculum y y nos pondremos en contacto contigo lo antes posible.
+           
+            <form action="https://formsubmit.co/admin@asolear.es" method="POST" enctype="multipart/form-data">
+              <!-- comandos -->
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_autoresponse" value="Muchas gracias, en breve le contactaremos.">
+              <input class="form-control" type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://asolear.es/index.html">
+              <input type="hidden" name="_subject" value="COLABORADOR">
+              <input type="hidden" name="_autoresponse" value="Gracias, en breve le contactaremos.">
+              <div class="col-sm-7">
+                <div class="row">
+                  <div class="column">
+                  </div>
+                  <div class="column"></div>
+                  <label for="Nombre">Nombre</label>
+                  <input name='nombre' class="form-control" id="nombre" placeholder="Nombre" required>
 
-              <label for="email">Nombre</label>
-              <input class="form-control" id="nombre" placeholder="Nombre">
+                  <label for="email">Email</label>
+                  <input name='email' type="email" class="form-control" id="email" placeholder="Enter email"
+                    required>
+                </div>
+                <div class="col-sm-7">
+                  <!-- <label for="name">soy</label>
+                  <select name='titular' class="form-control" id="funcion" required>
+                    <option value="Instalador" selected>Instalador</option>
+                    <option value="Empresa">Empresario</option>
+                    <option value="Ingenieria">Administrador</option>
+                    <option value="Particular">Particular</option>
+                  </select> -->
 
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  <label for="name">Servicio Ofertado</label>
+                  <select name='servicio' class="form-control" id="Servicio" required>
+                    <option value="servicio gestión energética" selected>Instalador electicista</option>
+                    <option value="Intalacion de autoconsumo">Montador de placas solares</option>
+                  </select>
 
-            </div>
-            <div class="col-sm-7">
+                  <label for="Telefono">Telefono</label>
+                  <input name='telefono' class="form-control" id="Telefono" placeholder="Telefono" required>
 
-              <label for="name">soy</label>
-              <select class="form-control" id="funcion" required>
-                <option value="Instalador" selected>Instalador</option>
-                <option value="Empresa">Empresa</option>
-                <option value="Ingenieria">Ingenieria</option>
-                <option value="Particular">Particular</option>
-              </select>
-            </div>
+
+                  <label for="name">Comentario o consulta</label>
+                  <input name='consulta' class="form-control" id="message2" placeholder="cometario" required>
+
+                  <label for="exampleFormControlInput1" class="form-label">Adjuntar CV:</label>
+                  <input type="file" id="myfile" name="cv" multiple><br><br>
+                  <h4 id="response"></h4>
+
+                  <label><input type="checkbox" class="agree" required> Acepto la</label> <a
+                    href="./politicaprivacidad.html">Política
+                    de Privacidad.</a>
+                  <input type="submit" class="btn btn-primary" value="Enviar">
+
+
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <p><span class="glyphicon glyphicon-map-marker"></span> </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+
           </div>
         </div>
 
