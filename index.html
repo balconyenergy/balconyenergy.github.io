@@ -48,6 +48,10 @@
 </head>
 
 <body>
+  <button hidden id='boton_modal_formulario_hogar' type="button" class="btn btn-primary" data-bs-toggle="modal"
+    data-bs-target="#modal_formulario_hogar">
+    formulario_modal
+  </button>
 
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
@@ -147,7 +151,9 @@
               <h1>Autoconsumo fotovoltaico:</h1>
               <p>En Asolear ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
                 solares del mercado.</p>
-              <p><a class="btn btn-lg btn-primary" onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio gratuito</a></p>
+              <p><a class="btn btn-lg btn-primary"
+                  onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
+                  gratuito</a></p>
             </div>
           </div>
         </div>
@@ -513,10 +519,7 @@
 
       <section>
         <!-- Button trigger modal -->
-        <button hidden id='boton_modal_formulario_hogar' type="button" class="btn btn-primary" data-bs-toggle="modal"
-          data-bs-target="#modal_formulario_hogar">
-          formulario_modal
-        </button>
+
 
         <!-- Modal -->
         <div class="modal fade" id="modal_formulario_hogar" data-bs-keyboard="false"
