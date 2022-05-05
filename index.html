@@ -103,7 +103,26 @@
           </ul>
 
         </div>
-        <a class="btn btn-lg btn-warning" onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Contacto</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn btn-lg btn-warning"
+                onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Contacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-global="phone" href="tel:952289557" data-track-event="click"
+                data-track-action="phone_link">☎ 952 289 557</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://wa.me/34600366211/?text=tu%20texto%20personalizado" target="_blank">
+                <img src="img/logo-wasap.png" width="40" height="40">
+              </a>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </nav>
   </header>
@@ -129,7 +148,7 @@
               <h1>Autoconsumo fotovoltaico:</h1>
               <p>En Asolear ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
                 solares del mercado.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Pide tu estudio gratuito</a></p>
+              <p><a class="btn btn-lg btn-primary" onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio gratuito</a></p>
             </div>
           </div>
         </div>
@@ -346,7 +365,7 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">Por el aumento de precios <span class="text-muted">de algunas de las
-              tecnologías tradicionales</span>
+                tecnologías tradicionales</span>
               <p class="lead"> En especial el gas, que acaba condicionando el precio en el mercado mayorista.</p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -360,6 +379,112 @@
         <!-- /END THE FEATURETTES -->
 
       </div><!-- /.container -->
+
+
+
+
+
+
+
+
+
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">¿Como podemos ayudarte?</h1>
+          <p class="col-md-12 fs-4">Supone un ahorro directo para el autoconsumidor y puede reducir el precio de la
+            electricidad
+            para el resto de consumidores, puesto que el autoconsumo contribuye a abaratar el precio
+            del mercado eléctrico: por un lado, al disminuir la demanda (quien autoconsume compra
+            menos energía de la red) y, por otro lado, al aumentar la oferta de energía renovable (si
+            hay excedentes, hay más energía negociada en el mercado eléctrico).</p>
+          <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
+        </div>
+      </div>
+
+
+
+
+      <div class="container marketing">
+
+
+        <!-- Container (Contact Section) -->
+
+        <form id="form" class="container-fluid bg-grey" method="POST">
+          <h2>CONTACTO</h2>
+
+
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="column">
+                <img src="img/city-g122f08f28_640.jpg" style="width:100%">
+              </div>
+              <div class="column"></div>
+              <label for="email">Nombre</label>
+              <input type="name" class="form-control" id="nombre" placeholder="Nombre">
+
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+
+
+
+              <label for="name">soy</label>
+              <select type="name" class="form-control" id="funcion" required>
+                <option value="Instalador" selected>Instalador</option>
+                <option value="Empresa">Empresa</option>
+                <option value="Ingenieria">Ingenieria</option>
+                <option value="Particular">Particular</option>
+              </select>
+
+
+
+              <label for="name">Servicio</label>
+              <select type="name" class="form-control" id="Servicio" required>
+                <option value="servicio gestión energética" selected>servicio gestión energética</option>
+                <option value="Optimizacion de Tarifa">Optimizacion de Tarifa</option>
+                <option value="Consutoria energética">Consutoria energética</option>
+              </select>
+
+              <label for="Telefono">Telefono</label>
+              <input type="name" class="form-control" id="Telefono" placeholder="Telefono">
+
+
+              <label for="name">Comentario o consulta</label>
+              <input type="name" class="form-control" id="message2" placeholder="cometario" required>
+
+              <h4 id="response"></h4>
+
+              <label><input type="checkbox" class="agree"> Acepto la</label> <a
+                href="./politicaprivacidad.html">Política
+                de Privacidad.</a>
+              <input type="submit" class="btn btn-primary" value="Enviar">
+
+
+              <div class="row">
+                <div class="col-sm-5">
+                  <p><span class="glyphicon glyphicon-map-marker"></span> C/ Severo Ochoa, 27 - 29590, PTA Málaga </p>
+                  <p><span class="glyphicon glyphicon-phone"></span> +34 600 366 211</p>
+                  <!-- <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> -->
+                </div>
+              </div>
+            </div>
+
+        </form>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -387,11 +512,6 @@
       </footer>
 
 
-
-
-
-
-
       <section>
         <!-- Button trigger modal -->
         <button hidden id='boton_modal_formulario_hogar' type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -405,7 +525,8 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de viabilidad de autoconsumo solar residencial gratuito.</h5>
+                <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de viabilidad de autoconsumo solar
+                  residencial gratuito.</h5>
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close"> Salir</button>
               </div>
               <div class="modal-body">
@@ -495,6 +616,17 @@
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
+
   </main>
 
 
@@ -505,11 +637,11 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous">   </script>
 
-    <script type="text/javascript" src="static/JavaScript/formulario_pasos.js"></script>
-    <script type="text/javascript" src="static/JavaScript/formulario.js"></script>
+  <script type="text/javascript" src="static/JavaScript/formulario_pasos.js"></script>
+  <script type="text/javascript" src="static/JavaScript/formulario.js"></script>
 
-<!-- COOKIES -->
-<!--  -->
+  <!-- COOKIES -->
+  <!--  -->
   <link rel="stylesheet" href="static/cookies//cookieconsent.css" media="print" onload="this.media='all'">
   <script defer src="static/cookies/cookieconsent.js"></script>
   <script defer src="static/cookies/cookieconsent-init.js"></script>
@@ -518,43 +650,43 @@
       console.log('analytics enabled!');
   </script>
 
-<script type="text/javascript">
-// <![CDATA[  <-- For SVG support
-if ('WebSocket' in window) {
-  (function () {
-    function refreshCSS() {
-      var sheets = [].slice.call(document.getElementsByTagName("link"));
-      var head = document.getElementsByTagName("head")[0];
-      for (var i = 0; i < sheets.length; ++i) {
-        var elem = sheets[i];
-        var parent = elem.parentElement || head;
-        parent.removeChild(elem);
-        var rel = elem.rel;
-        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
         }
-        parent.appendChild(elem);
-      }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
     }
-    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-    var address = protocol + window.location.host + window.location.pathname + '/ws';
-    var socket = new WebSocket(address);
-    socket.onmessage = function (msg) {
-      if (msg.data == 'reload') window.location.reload();
-      else if (msg.data == 'refreshcss') refreshCSS();
-    };
-    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-      console.log('Live reload enabled.');
-      sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
     }
-  })();
-}
-else {
-  console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-}
 // ]]>
-</script>
+  </script>
 
 
 </body>
