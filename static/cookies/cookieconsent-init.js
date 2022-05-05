@@ -1,4 +1,4 @@
-var LOREM_IPSUM = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+var LOREM_IPSUM = 'Configuracion';
 
 // obtain cookieconsent plugin
 var cc = initCookieConsent();
@@ -140,7 +140,7 @@ cc.run({
                         ]
                     }, {
                         title: 'More information',
-                        description: LOREM_IPSUM + ' <a class="cc-link" href="https://orestbida.com/contact/">Contact me</a>.',
+                        description: LOREM_IPSUM + ' <a class="cc-link" href="https://asolear.es#contacto/">Contactame</a>.',
                     }
                 ]
             }
