@@ -151,7 +151,7 @@
               <h1>Autoconsumo fotovoltaico:</h1>
               <p>En Asolear ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
                 solares del mercado.</p>
-              <p><a class="btn btn-lg btn-primary"
+              <p><a class="btn btn-lg btn-warning"
                   onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
                   gratuito</a></p>
             </div>
@@ -165,7 +165,7 @@
               <h1>Autoconsumo fotovoltaico:</h1>
               <p>En Asolear ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
                 solares del mercado.</p>
-              <p><a class="btn btn-lg btn-primary"
+              <p><a class="btn btn-lg btn-warning"
                   onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
                   gratuito</a></p>
             </div>
@@ -180,7 +180,7 @@
                 <h1>Autoconsumo fotovoltaico:</h1>
                 <p>En Asolear ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
                   solares del mercado.</p>
-                <p><a class="btn btn-lg btn-primary"
+                <p><a class="btn btn-lg btn-warning"
                     onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
                     gratuito</a></p>
               </div>
@@ -654,8 +654,7 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de viabilidad de autoconsumo solar
-                residencial gratuito.</h5>
+              <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de viabilidad gratuito.</h5>
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close"> Salir</button>
             </div>
             <div class="modal-body">
@@ -666,12 +665,12 @@
                   <h1></h1>
                   <!-- One "tab" for each step in the form: -->
                   <div class="tab">
-                    <h5>Estara en: </h5>
+                    <h5>¿Dónde te gustaría realizar tu instalación? </h5>
                     <div>
                       <div class="row featurette">
                         <div class="col-12">
                           <div class="row mb-3">
-                            <label for="validationServer03">Buscar</label>
+                            <label for="validationServer03">Indicanos una localización mediante el cuadro de busqueda o arrastrando el marcador del mapa</label>
                             <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
                               placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback"
                               required value="C. Moby Dick, 30, 29004 Málaga, Spain">
@@ -680,7 +679,7 @@
                       </div>
                       <div>
                         <div>
-                          <label for="validationServer03">Arrastre el marcador</label>
+                          <!-- <label for="validationServer03">Arrastre el marcador</label> -->
 
                           <div class="container" id="map"></div>
                           <!-- Add Styling for Google Maps-->
@@ -719,8 +718,8 @@
 
                   <div style="overflow:auto;">
                     <div style="float:right;">
-                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previo</button>
+                      <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
                     </div>
                   </div>
 

@@ -5,7 +5,7 @@ function showTab(n) {
   // This function will display the specified tab of the form img/app-screenshots/photovoltaic-gcf288fe16_640.jpg
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
-  // img/app-screenshots/photovoltaic-gcf288fe16_640.jpg and fix the Previous/Next buttons:
+  // img/app-screenshots/photovoltaic-gcf288fe16_640.jpg and fix the Previous/Siguiente buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
@@ -14,7 +14,7 @@ function showTab(n) {
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Siguiente";
   }
   // img/app-screenshots/photovoltaic-gcf288fe16_640.jpg and run a function that displays the correct step indicator:
   fixStepIndicator(n)
