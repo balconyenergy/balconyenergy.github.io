@@ -73,8 +73,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item"
-                    onclick="document.getElementById('modal_guia_autoconsumidor_5_pasos').click()"
-                    href="#">HOGAR</a>
+                    onclick="document.getElementById('modal_guia_autoconsumidor_5_pasos').click()" href="#">HOGAR</a>
                 </li>
                 <li><a class="dropdown-item" onclick="document.getElementById('modal_guia_profesional').click()"
                     href="#">EMPRESA</a>
@@ -202,10 +201,12 @@
       <div class="p-5 mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">¿Cuánto me cuesta y cuánto me ahorro?</h1>
-          <p class="col-md-8 fs-4">En el caso residencial, en la actualidad, un sistema de 3 kW puede cubrir la mayoría de las necesidades de
+          <p class="col-md-8 fs-4">En el caso residencial, en la actualidad, un sistema de 3 kW puede cubrir la mayoría
+            de las necesidades de
             iluminación y consumo
-            eléctrico de un hogar de cuatro miembros y una superficie de setenta metros cuadrados, con un coste de unos 4500 €. </p>
-          <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->  
+            eléctrico de un hogar de cuatro miembros y una superficie de setenta metros cuadrados, con un coste de unos
+            4500 €. </p>
+          <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
         </div>
       </div>
 
@@ -523,7 +524,7 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
-           
+
             <form action="https://formsubmit.co/admin@asolear.es" method="POST" enctype="multipart/form-data">
               <!-- comandos -->
               <input type="hidden" name="_template" value="table">
@@ -541,8 +542,7 @@
                   <input name='nombre' class="form-control" id="nombre" placeholder="Nombre" required>
 
                   <label for="email">Email</label>
-                  <input name='email' type="email" class="form-control" id="email" placeholder="Enter email"
-                    required>
+                  <input name='email' type="email" class="form-control" id="email" placeholder="Enter email" required>
                 </div>
                 <div class="col-sm-7">
                   <!-- <label for="name">soy</label>
@@ -644,33 +644,79 @@
     </footer>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section>
-      <!-- Button trigger modal -->
-
-
-      <!-- Modal -->
-      <div class="modal fade" id="modal_formulario_hogar" data-bs-keyboard="false"
-        aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de viabilidad gratuito.</h5>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close"> Salir</button>
-            </div>
-            <div class="modal-body">
-
-
-              <div class="container marketing">
-                <form class="row g-3" id="regForm" action="">
+      <form id="regForm" action="https://formsubmit.co/admin@asolear.es" method="POST" enctype="multipart/form-data">
+        <!-- comandos -->
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="Muchas gracias, en breve le contactaremos.">
+        <!-- <input class="form-control" type="hidden" name="_captcha" value="false"> -->
+        <input type="hidden" name="_next" value="https://asolear.es/index.html">
+        <input type="hidden" name="_subject" value="HOGAR">
+        <!-- <input type="hidden" name="_autoresponse" value="Gracias, en breve le contactaremos."> -->
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="modal_formulario_hogar" data-bs-keyboard="false"
+          aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de Viabilidad Previo (gratuito).</h5>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close"> Salir</button>
+              </div>
+              <div class="modal-body">
+                <div class="container marketing">
                   <h1></h1>
                   <!-- One "tab" for each step in the form: -->
                   <div class="tab">
-                    <h5>¿Dónde te gustaría realizar tu instalación? </h5>
+                    <h5>¿Dónde ira tu instalación? </h5>
                     <div>
                       <div class="row featurette">
                         <div class="col-12">
                           <div class="row mb-3">
-                            <label for="validationServer03">Indicanos una localización mediante el cuadro de busqueda o arrastrando el marcador del mapa</label>
+                            <label for="validationServer03">Indicanos una localización mediante el cuadro de busqueda
+                              o arrastrando el marcador del mapa</label>
                             <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
                               placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback"
                               required value="C. Moby Dick, 30, 29004 Málaga, Spain">
@@ -680,7 +726,6 @@
                       <div>
                         <div>
                           <!-- <label for="validationServer03">Arrastre el marcador</label> -->
-
                           <div class="container" id="map"></div>
                           <!-- Add Styling for Google Maps-->
                           <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
@@ -700,20 +745,40 @@
                     </div>
                   </div>
 
-                  <div class="tab">Contact Info:
-                    <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
-                    <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+                  <div class="tab">📊Consumo
+                    <!-- <input name='kWcontratad' type="range" class="form-range" min="0.1" max="15.1" value='4.0'
+                      step="0.1" id="customRange3" oninput="this.nextElementSibling.value = this.value">
+                    <output>4.0</output> <label for="customRange3" class="form-label">kW </label> -->
+                    <input name='kWh' type="range" class="form-range" min="100" max="999" value="290" step="1"
+                      id="customRange3" oninput="this.nextElementSibling.value = this.value">
+                    <output>290</output> <label for="customRange3" class="form-label">kWh 
+                      mensual.</label>
                   </div>
 
-                  <div class="tab">Birthday:
-                    <p><input placeholder="dd" oninput="this.className = ''"></p>
-                    <p><input placeholder="mm" oninput="this.className = ''"></p>
-                    <p><input placeholder="yyyy" oninput="this.className = ''"></p>
-                  </div>
-
-                  <div class="tab">Login Info:
-                    <p><input placeholder="Username..." oninput="this.className = ''"></p>
-                    <p><input placeholder="Password..." oninput="this.className = ''"></p>
+                  <div class="tab">🧖‍♂️ Mis datos
+                    <div>
+                      <div>
+                        <!-- <div>
+                          <label for="validationServer01">Nombre</label>
+                          <input name='destinatario_nombre' type="text" class="form-control" id="searchInput"
+                            placeholder="Pepe Perez" required value="Pepe Perez">
+                        </div> -->
+                      </div>
+                      <div>
+                        <!-- <div >
+                          <label for="validationServer02">Tlf.</label>
+                          <input name='destinatario_telefono' type="text" class="form-control" id="validationServer02"
+                            placeholder="999 000 999" required value="999 000 999">
+                        </div> -->
+                      </div>
+                      <div>
+                        <div c>
+                          <label for="validationServer02">Email</label>
+                          <input required name='email' type="email" class="form-control" id="floatingInput"
+                            placeholder="pepeperez@gmail.com" value="pepeperez@gmail.com">
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div style="overflow:auto;">
@@ -722,26 +787,23 @@
                       <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
                     </div>
                   </div>
-
                   <!-- Circles which indicates the steps of the form: -->
                   <div style="text-align:center;margin-top:40px;">
                     <span class="step"></span>
                     <span class="step"></span>
                     <span class="step"></span>
-                    <span class="step"></span>
+                    <!-- <span class="step"></span> -->
                   </div>
-
-                </form>
+                </div>
               </div>
 
-            </div>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button> -->
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button> -->
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
 
@@ -755,11 +817,56 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
