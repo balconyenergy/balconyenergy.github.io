@@ -8,7 +8,7 @@ defaultLatLong = {
 
 var map = new google.maps.Map(document.getElementById('map'), {
   center: defaultLatLong,
-  zoom: 17,
+  zoom: 6,
   tilt: 0,
   mapTypeId: 'satellite'
 });
