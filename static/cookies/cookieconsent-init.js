@@ -59,7 +59,7 @@ cc.run({
         'en': {
             consent_modal: {
                 title: 'Politica de Cookies',
-                description: '<h3> En Asolear utilizamos cookies y datos para: </h3> <p> Proporcionar y mantener servicios, para hacer un seguimiento de las interrupciones y prevenir el spam, el fraude y los abusos. </p> <p> Medir la interacción de la audiencia y estadísticas del sitio web para entender cómo se utilizan nuestros servicios</p> <a href="politicaprivacidad.html" class="cc-link">Politica de Privacidad</a>',
+                description: 'Este portal web únicamente utiliza cookies propias con finalidad técnica, no recaba ni cede datos de carácter personal de los usuarios sin su conocimiento. <a href="politicaprivacidad.html" class="cc-link">Politica de Privacidad</a>',
                 primary_btn: {
                     text: 'Aceptar todas',
                     role: 'accept_all'      //'accept_selected' or 'accept_all'
