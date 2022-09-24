@@ -66,7 +66,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 AUTOCONSUMO
@@ -80,11 +80,16 @@
                 </li>
                 <li><a class="dropdown-item" href="#">COLECTIVO</a></li>
               </ul>
+            </li> -->
+
             <li class="nav-item">
-              <a class="nav-link" href="#">EFICIENCIA ENERGETICA</a>
+              <a class="nav-link" onclick="document.getElementById('boton_modal_formulario_hogar').click()"  href="#">Kit Solar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">COMUNIDAD ENERGETICA</a>
+              <a class="nav-link" onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Kit Eolico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Servicios</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -144,16 +149,16 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/app-screenshots/solar-cells-g18b5f9612_640.jpg" alt="" class="img-fluid" />
+          <img src="img/Solar_panels_integrated_in_a_block_of_flats_in_Viikki_Helsinki_Finland.jpg" alt="" class="img-fluid" />
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Autoconsumo fotovoltaico:</h1>
-              <p>En Balcony Energy ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores
+              <h1>Kit de Autoconsumo fotovoltaico autoinstalable:</h1>
+              <p>En <b>Balcony Energy</b> ofrecemos  kits autoinstalables para viviendas unifamiliares con los mejores
                 paneles
                 solares del mercado.</p>
               <p><a class="btn btn-lg btn-warning"
-                  onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
-                  gratuito</a></p>
+                  onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu kit
+                  </a></p>
             </div>
           </div>
         </div>
@@ -262,71 +267,7 @@
 
 
 
-      <!-- Marketing messaging and featurettes
-  ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-
-
-
-        <div class="h-100 p-5 text-white border bg-secondary rounded-3">
-          <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold"> Pasos necesarios.</h1>
-            <p class="col-md-8 fs-4">Somos una empresa que se dedica específicamente a las renovables.
-              Llevamos a cabo los pasos técnicos y administrativos necesarios,
-              además de realizar la instalación con todas las garantías de seguridad.</p>
-            <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
-          </div>
-        </div>
-
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="img/app-screenshots/office-gc583cd8f6_640.jpg" alt="" class="img-fluid" />
-
-
-            <h2>Estudio de viabilidad</h2>
-            <p>Un estudio de viabilidad que analice
-              las posibilidades de nuestro edificio,
-              el presupuesto de lo que podría costar
-              la instalación y cuánto nos podríamos
-              ahorrar en nuestro caso concreto. Para
-              esto, es posible que nos pidan datos de
-              nuestras facturas eléctricas, ya que el
-              patrón de consumo determina cuánto
-              podemos ahorrar.</p>
-            <!-- <p>              <a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img src="img/app-screenshots/documents-g14d5721ca_640.jpg" alt="" class="img-fluid" />
-            <h2>Trámites administrativos</h2>
-            <p>Los trámites administrativos, que en
-              función de la ubicación y la tipología
-              pueden incluir licencias de obras
-              o autorizaciones administrativas,
-              especialmente para instalaciones más
-              grandes o aquellas situadas en edificios
-              afectados por alguna figura de protección
-              o en espacios protegidos ambientalmente.
-            </p>
-            <!-- <p>              <a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img src="img/app-screenshots/installation-gc06f69b7f_640.jpg" alt="" class="img-fluid" />
-
-
-            <h2>Instalación</h2>
-            <p>La propia instalación, teniendo en cuenta
-              la normativa energética pero también de
-              seguridad de las instalaciones. El registro ante la comunidad autónoma y
-              las notificaciones que corresponda ante la
-              distribuidora de electricidad.</p>
-            <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
+ 
 
         <!-- START THE FEATURETTES -->
 
@@ -395,6 +336,70 @@
 
 
 
+     <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+
+
+        <div class="h-100 p-5 text-white border bg-secondary rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold"> Otros Servicios.</h1>
+            <p class="col-md-8 fs-4">Somos una empresa que se dedica específicamente a las renovables.
+              Llevamos a cabo los pasos técnicos y administrativos necesarios,
+              además de realizar la instalación con todas las garantías de seguridad.</p>
+            <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
+          </div>
+        </div>
+
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="img/app-screenshots/office-gc583cd8f6_640.jpg" alt="" class="img-fluid" />
+
+
+            <h2>Estudio de viabilidad</h2>
+            <p>Un estudio de viabilidad que analice
+              las posibilidades de nuestro edificio,
+              el presupuesto de lo que podría costar
+              la instalación y cuánto nos podríamos
+              ahorrar en nuestro caso concreto. Para
+              esto, es posible que nos pidan datos de
+              nuestras facturas eléctricas, ya que el
+              patrón de consumo determina cuánto
+              podemos ahorrar.</p>
+            <!-- <p>              <a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="img/app-screenshots/documents-g14d5721ca_640.jpg" alt="" class="img-fluid" />
+            <h2>Trámites administrativos</h2>
+            <p>Los trámites administrativos, que en
+              función de la ubicación y la tipología
+              pueden incluir licencias de obras
+              o autorizaciones administrativas,
+              especialmente para instalaciones más
+              grandes o aquellas situadas en edificios
+              afectados por alguna figura de protección
+              o en espacios protegidos ambientalmente.
+            </p>
+            <!-- <p>              <a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="img/app-screenshots/installation-gc06f69b7f_640.jpg" alt="" class="img-fluid" />
+
+
+            <h2>Instalación</h2>
+            <p>La propia instalación, teniendo en cuenta
+              la normativa energética pero también de
+              seguridad de las instalaciones. El registro ante la comunidad autónoma y
+              las notificaciones que corresponda ante la
+              distribuidora de electricidad.</p>
+            <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
 
 
 
@@ -641,9 +646,9 @@
 
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Autoconsumo</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Comunidad E.</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Eficiencia</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Solar</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Eolica</a></li>
+        <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Eficiencia</a></li> -->
       </ul>
     </footer>
 
@@ -716,14 +721,16 @@
                   <!-- One "tab" for each step in the form: -->
                   <div class="tab">
 
+
+
                     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                       <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm">
                           <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Free</h4>
+                            <h4 class="my-0 fw-normal">Ventana</h4>
                           </div>
                           <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
+                            <h1 class="card-title pricing-card-title">€0<small class="text-muted fw-light"></small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
                               <li>10 users included</li>
@@ -742,10 +749,10 @@
                       <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm">
                           <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Pro</h4>
+                            <h4 class="my-0 fw-normal">Balcón</h4>
                           </div>
                           <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
+                            <h1 class="card-title pricing-card-title">€15<small class="text-muted fw-light"></small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
                               <li>20 users included</li>
@@ -760,10 +767,10 @@
                       <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm border-primary">
                           <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                            <h4 class="my-0 fw-normal">Terraza</h4>
                           </div>
                           <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
+                            <h1 class="card-title pricing-card-title">€29<small class="text-muted fw-light"></small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
                               <li>30 users included</li>
@@ -811,7 +818,7 @@
                         </div>
                       </div>
                     </div>
-                    
+
 
                     <h2 class="display-6 text-center mb-4">Compare plans</h2>
 
@@ -820,50 +827,50 @@
                         <thead>
                           <tr>
                             <th style="width: 34%;"></th>
-                            <th style="width: 22%;">Free</th>
-                            <th style="width: 22%;">Pro</th>
-                            <th style="width: 22%;">Enterprise</th>
+                            <th style="width: 22%;">Ventana</th>
+                            <th style="width: 22%;">Balcón</th>
+                            <th style="width: 22%;">Terraza</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <th scope="row" class="text-start">Public</th>
-                            <td>Xx</td>
-                            <td>X</td>
-                            <td>X</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <th scope="row" class="text-start">Private</th>
                             <td></td>
-                            <td>X</td>
-                            <td>X</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
                           </tr>
                         </tbody>
 
                         <tbody>
                           <tr>
                             <th scope="row" class="text-start">Permissions</th>
-                            <td>X</td>
-                            <td>X</td>
-                            <td>X</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <th scope="row" class="text-start">Sharing</th>
                             <td></td>
-                            <td>X</td>
-                            <td>X</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <th scope="row" class="text-start">Unlimited members</th>
                             <td></td>
-                            <td>X</td>
-                            <td>X</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <th scope="row" class="text-start">Extra security</th>
                             <td></td>
                             <td></td>
-                            <td>X</td>
+                            <td>✔️</td>
                           </tr>
                         </tbody>
                       </table>
