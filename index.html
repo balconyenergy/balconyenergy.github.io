@@ -42,7 +42,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNo8yVR1bVgiLVO2QyXaRnHZRuMjVNuZ4&libraries=places"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
-  <script type="text/javascript" src="static/JavaScript/mapa.js"></script>
+  <!-- <script type="text/javascript" src="static/JavaScript/mapa.js"></script> -->
   <!-- <script type="text/javascript" src="static/JavaScript/cookies.js"></script> -->
 
 </head>
@@ -58,8 +58,8 @@
       <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary "> -->
 
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://balcony.energy/"><img src="img/Balcony Energy.svg" alt="" class="img-fluid"
-            width="30" height="30" /></a>
+        <a class="navbar-brand" href="https://balcony.energy/"><img src="img/Balcony Energy.svg" alt=""
+            class="img-fluid" width="30" height="30" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -148,7 +148,8 @@
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Autoconsumo fotovoltaico:</h1>
-              <p>En Balcony Energy ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
+              <p>En Balcony Energy ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores
+                paneles
                 solares del mercado.</p>
               <p><a class="btn btn-lg btn-warning"
                   onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
@@ -162,7 +163,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Autoconsumo fotovoltaico:</h1>
-              <p>En Balcony Energy ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
+              <p>En Balcony Energy ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores
+                paneles
                 solares del mercado.</p>
               <p><a class="btn btn-lg btn-warning"
                   onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
@@ -177,7 +179,8 @@
             <div class="carousel-caption text-end">
               <div class="carousel-caption">
                 <h1>Autoconsumo fotovoltaico:</h1>
-                <p>En Balcony Energy ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores paneles
+                <p>En Balcony Energy ofrecemos instalaciones llave en mano para viviendas unifamiliares con los mejores
+                  paneles
                   solares del mercado.</p>
                 <p><a class="btn btn-lg btn-warning"
                     onclick="document.getElementById('boton_modal_formulario_hogar').click()" href="#">Pide tu estudio
@@ -392,7 +395,7 @@
 
 
 
-      
+
 
 
 
@@ -688,7 +691,8 @@
 
 
     <section>
-      <form id="regForm" action="https://formsubmit.co/admin@balcony.energy" method="POST" enctype="multipart/form-data">
+      <form id="regForm" action="https://formsubmit.co/admin@balcony.energy" method="POST"
+        enctype="multipart/form-data">
         <!-- comandos -->
         <input type="hidden" name="_template" value="table">
         <!-- <input type="hidden" name="_autoresponse" value="Muchas gracias, en breve le contactaremos."> -->
@@ -700,7 +704,7 @@
         <!-- Modal -->
         <div class="modal fade" id="modal_formulario_hogar" data-bs-keyboard="false"
           aria-labelledby="modal_formulario_hogarLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="modal_formulario_hogarLabel">Estudio de Viabilidad Previo (gratuito).</h5>
@@ -711,39 +715,148 @@
                   <h1></h1>
                   <!-- One "tab" for each step in the form: -->
                   <div class="tab">
-                    <h5>¿Dónde ira tu instalación? </h5>
-                    <div>
-                      <div class="row featurette">
-                        <div class="col-12">
-                          <div class="row mb-3">
-                            <label for="validationServer03">Indicanos una localización mediante el cuadro de busqueda
-                              o arrastrando el marcador del mapa</label>
-                            <input name='direccion' type="text" class="form-control is-valid" id="validationServer03"
-                              placeholder="Por favor meta su direccion" aria-describedby="validationServer03Feedback"
-                              required value="C. Moby Dick, 30, 29004 Málaga, Spain">
+
+
+
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                      <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                          <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Free</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                              <li>10 users included</li>
+                              <li>2 GB of storage</li>
+                              <li>Email support</li>
+                              <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                           </div>
                         </div>
                       </div>
-                      <div>
-                        <div>
-                          <!-- <label for="validationServer03">Arrastre el marcador</label> -->
-                          <div class="container" id="map"></div>
-                          <!-- Add Styling for Google Maps-->
-                          <link rel="stylesheet" type="text/css" href="static/styles/mapa.css">
-                          </link>
-                        </div>
-                        <div>
-                          <div id="validationServer03Feedback" class="valid-feedback">
-                            <div>
-                              <b>Coordenadas:</b>
-                              <span id="coordinates" name="coordinates"></span>
-                            </div>
+                      <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                          <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro</h4>
                           </div>
-                          <input type="hidden" id="currentLatitude" name='lat' value="36.66421645459196">
-                          <input type="hidden" id="currentLongitude" name='lon' value="-4.458621906745909">
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                              <li>20 users included</li>
+                              <li>10 GB of storage</li>
+                              <li>Priority email support</li>
+                              <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                          <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                              <li>30 users included</li>
+                              <li>15 GB of storage</li>
+                              <li>Phone and email support</li>
+                              <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                          </div>
                         </div>
                       </div>
                     </div>
+
+                    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+                    <div class="table-responsive">
+                      <table class="table text-center">
+                        <thead>
+                          <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">Free</th>
+                            <th style="width: 22%;">Pro</th>
+                            <th style="width: 22%;">Enterprise</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" class="text-start">Public</th>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="text-start">Private</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                          </tr>
+                        </tbody>
+
+                        <tbody>
+                          <tr>
+                            <th scope="row" class="text-start">Permissions</th>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="text-start">Sharing</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="text-start">Unlimited members</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="text-start">Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                              </svg></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
                   </div>
 
                   <div class="tab">📊Consumo
@@ -874,8 +987,8 @@
     crossorigin="anonymous">   </script>
 
   <!-- direccion -->
-  <!-- <script type="text/javascript" src="static/JavaScript/formulario_pasos.js"></script>
-  <script type="text/javascript" src="static/JavaScript/formulario.js"></script> -->
+  <script type="text/javascript" src="static/JavaScript/formulario_pasos.js"></script>
+  <script type="text/javascript" src="static/JavaScript/formulario.js"></script>
 
   <!-- COOKIES -->
   <!--  -->
